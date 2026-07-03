@@ -1,35 +1,35 @@
-# 💸 UPI Transaction Analyser
+ UPI Transaction Analyser
 
 An interactive web app to analyse UPI transaction data — built with Python, Streamlit, and Machine Learning.
 
 ---
 
-## 📊 Features
+📊 Features
 
-### 📈 Exploratory Data Analysis
+ Exploratory Data Analysis
 - **Top Statistics** — Total transactions, total amount, success/failed count, average transaction value
 - **Monthly Timeline** — Transaction volume trends over months
 - **Daily Timeline** — Day-by-day spending patterns
 - **Activity Map** — Busiest days of the week and months of the year
 - **Hourly Pattern** — Which hours see the most transactions
 
-### 💰 Transaction Insights
+ Transaction Insights
 - **Amount Distribution** — Breakdown by ranges (<100, 100-500, 500-1K, 1K-5K, 5K-10K, >10K)
 - **Category Analysis** — Spending split across Food, Shopping, Travel, Bills, etc.
 - **UPI Bank Distribution** — @okaxis, @oksbi, @paytm, @gpay and more
 
-### 👤 User Analysis
+ User Analysis
 - **Top Senders & Receivers** — Who sends/receives the most money
 - **WordCloud** — Most active users visualised
 
-### 🤖 Machine Learning
+ Machine Learning
 - **Anomaly Detection** — Suspicious/unusual transactions flagged using Isolation Forest
 - **Success Prediction** — Random Forest model to predict transaction success with feature importance
 - **Transaction Clustering** — KMeans clustering + PCA visualisation to find hidden patterns
 
 ---
 
-## 🚀 How to Use
+ How to Use
 
 1. Clone the repo and install dependencies
 2. Generate sample data (or use your own CSV)
@@ -39,7 +39,7 @@ An interactive web app to analyse UPI transaction data — built with Python, St
 
 ---
 
-## 🛠️ Tech Stack
+ Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -53,7 +53,7 @@ An interactive web app to analyse UPI transaction data — built with Python, St
 
 ---
 
-## 📁 Project Structure
+ Project Structure
 
 ```
 upi_analyser/
@@ -68,7 +68,7 @@ upi_analyser/
 
 ---
 
-## 📋 CSV Format Required
+ CSV Format Required
 
 Your uploaded CSV must have these columns:
 
@@ -88,7 +88,7 @@ Your uploaded CSV must have these columns:
 
 ---
 
-## 💻 Run Locally
+ Run Locally
 
 ```bash
 # 1. Clone the repo
@@ -107,20 +107,20 @@ streamlit run app.py
 
 ---
 
-## 🧠 ML Models Used
+ ML Models Used
 
-### 🚨 Anomaly Detection — Isolation Forest
+ Anomaly Detection — Isolation Forest
 Flags transactions that are statistically unusual based on amount, hour, and month. Useful for detecting potential fraud or outliers.
 
-### 🤖 Success Prediction — Random Forest Classifier
+ Success Prediction — Random Forest Classifier
 Predicts whether a transaction will succeed or fail based on features like amount, hour, bank, and category. Also shows which features matter most.
 
-### 🔵 Clustering — KMeans + PCA
+ Clustering — KMeans + PCA
 Groups similar transactions into clusters and visualises them in 2D using PCA dimensionality reduction.
 
 ---
 
-## 👨‍💻 Developer
+ Developer
 
 Made with ❤️ by **Ankit** — IIT Kanpur
 
